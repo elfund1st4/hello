@@ -14,3 +14,13 @@ jobs:
         uses: CycloneDX/gh-node-module-generatebom@v1
         with: 
           output: './test.app.bom.xml'
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: test.app.bom.xml
+          retention-days: 5
+      - name: Download a single artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: my-artifact
