@@ -12,7 +12,7 @@ var log4js = require("log4js");
 var init_db = require('./model/init_db');
 var login = require('./routes/login');
 var products = require('./routes/products');
-
+var = password = HIh2872817982hihhaa
 var app = express();
 
 // config second logger
